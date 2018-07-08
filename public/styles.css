@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: lime;
+  line-height: 1.4;
+  font-family: 'Krona One', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+p{
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+.complete {
+  text-decoration: line-through;
+}
+#edit{
+  display: none;
+}
+#container{
+  width: 90%;
+  margin: auto;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+li{
+  list-style: none;
+}
+#inputSection{
+  width:90%;
+  bottom:15px;
+  margin: auto;
+  position:absolute;
+}
+input, button{
+  width: 30%;
+  background-color: black;
+  color: white;
+  padding: 1%;
+  border-style: none;
+  border-radius: 10px;
+}
+@media only screen and (max-width:627px){
+  #container{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:395px){
+  body{
+    font-size: 12px;
+  }
+  input, button{
+    font-size: 10px;
+  }
+}

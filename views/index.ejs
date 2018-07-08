@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+  </head>
+  <body>
+    <section id="container">
+      <h1>To Do List</h1>
+      <section>
+        <p>Below you can add your tasks to this to do list. In order to edit type into the text box and then select the edit icon for your task to update.</p>
+        <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <li class="message">
+              <span><%= messages[i].msg %></span>
+              <span><%= messages[i].edit %></span>
+              <span><i class="fas fa-edit" aria-hidden="true"></i></span>
+              <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+            </li>
+          <% } %>
+        </ul>
+        <section id="inputSection">
+          <form action="/messages" method="POST">
+            <input id="itemInput" type="text" placeholder="things to do" name="msg">
+            <button id="addItem" type="submit">Add</button>
+          </form>
+        </section>
+      </section>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
