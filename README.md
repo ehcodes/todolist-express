@@ -1,4 +1,4 @@
-![21 Savage](public/21savage.jpg)
+![]()
 
 ## Installation
 
@@ -7,5 +7,5 @@
 
 ## Usage
 
-1. run `npm run savage`
+1. run `npm run todolist`
 2. Navigate to `localhost:3000`
