@@ -1,4 +1,4 @@
-![]()
+![screenshot of todolist](https://github.com/ehcodes/todolist-express/blob/master/public/Screenshot.png?raw=true)
 
 ## Installation
 
